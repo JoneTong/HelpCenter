@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>帮助中心导航栏添加页</title>
+    <link rel="stylesheet" href="css/zui.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+<!--nav开始-->
+<div class="header">
+    <div class="container">
+        <div class="logo col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <img src="" alt=""/>
+        </div>
+        <!--当处于PC大、中屏时，导航横向显示开始-->
+        <ul class="nav nav-pills col-lg-7 col-md-7 hidden-sm hidden-xs">
+            <li class="active"><a href="">导航管理</a></li>
+            <li><a href="class.html">文章分类</a></li>
+            <li><a href="ContentList.html">文章维护</a></li>
+            <li><a href="Review.html">预览站点</a></li>
+        </ul>
+        <ul class="nav col-lg-3 col-md-3 hidden-sm hidden-xs">
+            <li class="user-name col-lg-8 col-md-7">
+                <span>当前登录用户名</span>
+            </li>
+            <li class="col-lg-4 col-md-5 back">
+                <a href="">退出</a>
+            </li>
+        </ul>
+        <!--当处于PC大、中屏时，导航横向显示结束-->
+        <!--当处于小屏如ipad屏时，导航收起，右侧按钮为点击入口开始-->
+        <button class="dropdown-toggle visible-sm visible-xs  navbar-toggle" type="button" data-toggle="dropdown" data-target=".zui-navbar-collapse">
+            <span class="sr-only">切换导航</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+            <li><a href="">导航管理</a></li>
+            <li><a href="">文章分类</a></li>
+            <li><a href="">文章维护</a></li>
+            <li><a href="">预览站点</a></li>
+        </ul>
+        <!--当处于小屏如ipad屏时，导航收起，右侧按钮为点击入口开始-->
+    </div>
+</div>
+<!--nav结束-->
+<!--content开始-->
+ <div class="content contentList content-min-height">
+    <div class="container ">
+        <!--面包屑，对用户进入到页面某一层的一个提示开始-->
+        <div class="breadcrumb-box">
+        <span>所在位置：</span>
+            <ol class="breadcrumb">
+                <li><a href="">运营管理</a></li>
+                <li><a href="">内容号</a></li>
+                <li class="active">导航管理</li>
+            </ol>
+        </div>
+        <!--面包屑，对用户进入到页面某一层的一个提示结束-->
+        <div class="content-right navContent  col-lg-12 col-md-12 col-sm-12">
+            <button type="button"  class="btn btn-lg btn-primary add-btn" data-toggle="modal" data-target="#Modal">新增导航</button>
+            <div class="modal fade" id="Modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <p class="newAdd">新增导航</p>
+                        <hr/>
+                        <h3 class="h3">请输入导航名称：</h3>
+                        <input type="text"/>
+                        <P><h4 class="h4">提示：</h4>
+                        <span>导航名称建议不超过五个字</span>
+                        <div class="modal-btn clearfix">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                            <button class="btn btn btn-primary btn-right">确定</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <ul class="navContentList">
+                <li class="navContentItem clearfix">
+                    <div class="navItem clearfix col-lg-10 col-md-10 col-sm-10 ">
+                        <div class="navigation-left">
+                            <span class="navigation-name">名称：</span>
+                            <input type="text" placeholder="首页"/>
+                        </div>
+                        <div class="navigation-right">
+                            <div class="switch text-left">
+                                <input type="checkbox">
+                                <label>显示</label>
+                            </div>
+                            <a class="up-move"><i class="icon-upload"></i><span class="navItem-up">上移</span></a>
+                            <a class="down"><i class="icon-circle-arrow-down"></i><span class="navItem-down">下移</span></a>
+                        </div>
+                    </div>
+                    <div class=" navItem1 col-lg-12 col-md-12 col-sm-12  ">
+                        <span class="navLink">链接：</span>
+                        <input type="text" placeholder=""/>
+                        <button class="btn" data-toggle="modal" data-target="#saveModal" onclick="">保存</button>
+                        <div class="modal fade" id="saveModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="save-text">
+                                        以完成保存
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="navContentItem clearfix">
+                    <div class="navItem clearfix col-lg-10 col-md-10 col-sm-10 ">
+                        <div class="navigation-left">
+                            <span class="navigation-name">名称：</span>
+                            <input type="text" placeholder="首页"/>
+                        </div>
+                        <div class="navigation-right">
+                            <div class="switch text-left">
+                                <input type="checkbox">
+                                <label>显示</label>
+                            </div>
+                            <a class="up-move"><i class="icon-upload"></i><span class="navItem-up">上移</span></a>
+                            <a class="down"><i class="icon-circle-arrow-down"></i><span class="navItem-down">下移</span></a>
+                        </div>
+                    </div>
+                    <div class=" navItem1 col-lg-12 col-md-12 col-sm-12  ">
+                        <span class="navLink">链接：</span>
+                        <input type="text" placeholder=""/>
+                        <button class="btn" data-toggle="modal" data-target="#saveModal" onclick="">保存</button>
+                        <div class="modal fade" id="saveModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="save-text">
+                                        以完成保存
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="navContentItem clearfix">
+                    <div class="navItem clearfix col-lg-10 col-md-10 col-sm-10 ">
+                        <div class="navigation-left">
+                            <span class="navigation-name">名称：</span>
+                            <input type="text" placeholder="首页"/>
+                        </div>
+                        <div class="navigation-right">
+                            <div class="switch text-left">
+                                <input type="checkbox">
+                                <label>显示</label>
+                            </div>
+                            <a class="up-move"><i class="icon-upload"></i><span class="navItem-up">上移</span></a>
+                            <a class="down"><i class="icon-circle-arrow-down"></i><span class="navItem-down">下移</span></a>
+                        </div>
+                    </div>
+                    <div class=" navItem1 col-lg-12 col-md-12 col-sm-12  ">
+                        <span class="navLink">链接：</span>
+                        <input type="text" placeholder=""/>
+                        <button class="btn" data-toggle="modal" data-target="#saveModal" onclick="">保存</button>
+                        <div class="modal fade" id="saveModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="save-text">
+                                        以完成保存
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="navContentItem clearfix">
+                    <div class="navItem clearfix col-lg-10 col-md-10 col-sm-10 ">
+                        <div class="navigation-left">
+                            <span class="navigation-name">名称：</span>
+                            <input type="text" placeholder="首页"/>
+                        </div>
+                        <div class="navigation-right">
+                            <div class="switch text-left">
+                                <input type="checkbox">
+                                <label>显示</label>
+                            </div>
+                            <a class="up-move"><i class="icon-upload"></i><span class="navItem-up">上移</span></a>
+                            <a class="down"><i class="icon-circle-arrow-down"></i><span class="navItem-down">下移</span></a>
+                        </div>
+                    </div>
+                    <div class=" navItem1 col-lg-12 col-md-12 col-sm-12  ">
+                        <span class="navLink">链接：</span>
+                        <input type="text" placeholder=""/>
+                        <button class="btn" data-toggle="modal" data-target="#saveModal" onclick="">保存</button>
+                        <div class="modal fade" id="saveModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="save-text">
+                                        以完成保存
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="navContentItem clearfix">
+                    <div class="navItem clearfix col-lg-10 col-md-10 col-sm-10 ">
+                        <div class="navigation-left">
+                            <span class="navigation-name">名称：</span>
+                            <input type="text" placeholder="首页"/>
+                        </div>
+                        <div class="navigation-right">
+                            <div class="switch text-left">
+                                <input type="checkbox">
+                                <label>显示</label>
+                            </div>
+                            <a class="up-move"><i class="icon-upload"></i><span class="navItem-up">上移</span></a>
+                            <a class="down"><i class="icon-circle-arrow-down"></i><span class="navItem-down">下移</span></a>
+                        </div>
+                    </div>
+                    <div class=" navItem1 col-lg-12 col-md-12 col-sm-12  ">
+                        <span class="navLink">链接：</span>
+                        <input type="text" placeholder=""/>
+                        <button class="btn" data-toggle="modal" data-target="#saveModal" onclick="">保存</button>
+                        <div class="modal fade" id="saveModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="save-text">
+                                        以完成保存
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--content结束-->
+<!--footer开始-->
+<div class="footer1">
+    <div class="container">
+        Copyright@2008-2017   版权所有
+    </div>
+</div>
+<!--footer结束-->
+</body>
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/zui.js"></script>
+<script src="js/common.js"></script>
+</html>

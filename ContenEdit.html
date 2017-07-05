@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>帮助中心预览站点页</title>
+    <link rel="stylesheet" href="css/zui.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+<!--nav开始-->
+<div class="header">
+    <div class="container">
+        <div class="logo col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <img src="" alt=""/>
+        </div>
+        <!--当处于PC大、中屏时，导航横向显示开始-->
+        <ul class="nav nav-pills col-lg-7 col-md-7 hidden-sm hidden-xs">
+            <li><a href="Navigation.html">导航管理</a></li>
+            <li><a href="class.html">文章分类</a></li>
+            <li class="active"><a href="ContentList.html">文章维护</a></li>
+            <li><a href="Review.html">预览站点</a></li>
+        </ul>
+        <ul class="nav col-lg-3 col-md-3 hidden-sm hidden-xs">
+            <li class="user-name col-lg-8 col-md-7">
+                <span>当前登录用户名</span>
+            </li>
+            <li class="col-lg-4 col-md-5 back">
+                <a href="">退出</a>
+            </li>
+        </ul>
+        <!--当处于PC大、中屏时，导航横向显示结束-->
+        <!--当处于小屏如ipad屏时，导航收起，右侧按钮为点击入口开始-->
+        <button class="dropdown-toggle visible-sm visible-xs  navbar-toggle" type="button" data-toggle="dropdown" data-target=".zui-navbar-collapse">
+            <span class="sr-only">切换导航</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+            <li><a href="">导航管理</a></li>
+            <li><a href="">文章分类</a></li>
+            <li><a href="">文章维护</a></li>
+            <li><a href="">预览站点</a></li>
+        </ul>
+        <!--当处于小屏如ipad屏时，导航收起，右侧按钮为点击入口结束-->
+    </div>
+</div>
+<!--nav结束-->
+<!--container开始-->
+<div class="content content-height">
+    <div class="container">
+        <div class="breadcrumb-box">
+            <span>所在位置：</span>
+            <ol class="breadcrumb">
+                <li><a href="">运营管理</a></li>
+                <li><a href="">内容号</a></li>
+                <li class="active">文章维护</li>
+                <li class="active">文章编辑</li>
+            </ol>
+        </div>
+        <!--左边container部分开始-->
+        <div class="container col-lg-9 col-md-9 col-sm-9">
+            <div class="contenName clearfix">
+                <div class="name-left">
+                    <h3 class="h3">分类信息：</h3><span>二级分类</span>
+                </div>
+                <div class="name-center">
+                    <span>类型：</span><span>分类介绍</span>
+                </div>
+                <div class="name-right">
+                    <span>最后编辑：</span><span>2017-06-21</span>
+                </div>
+
+            </div>
+            <div class="contenName clearfix">
+                <h3 class="h3">内容标题：</h3>
+                <input type="text" placeholder="请输入内容标题"/>
+            </div>
+            <div class="text">
+                <div class="text-tit">富文本编辑器</div>
+            </div>
+            <div class="face">
+                <h4 class="h3">文章封面：</h4>
+                <ul class="faceDel">
+                </ul>
+                <div class="addimg col-lg-2 col-md-2 col-sm-2">+</div>
+
+            </div>
+            <button class="btn save" onclick="">保存</button>
+            <button class="btn giveUp" onclick="">预览</button>
+            <button class="btn giveUp " onclick="">放弃</button>
+        </div>
+        <!--左边container部分结束-->
+        <!--侧边默认封面图片开始-->
+        <div class="sidebar col-lg-3 col-md-3 col-sm-3">
+            <div class="container slideContent col-lg-12 col-md-12">
+                <h3 class="h3 col-lg-12 col-md-12 col-sm-12">内容图片类表</h3>
+                <ul>
+                    <li class="clearfix col-lg-12 list-ex">
+                        <input type="checkbox" class="col-lg-1 col-md-1 col-sm-1"/>
+                        <div class="f-list-img col-lg-11 col-md-11 col-sm-11">
+                            <img src="images/u930.png" alt=""/>
+                        </div>
+                    </li>
+                    <li class="clearfix col-lg-12 list-ex">
+                        <input type="checkbox" class="col-lg-1 col-md-1 col-sm-1"/>
+                        <div class="f-list-img col-lg-11 col-md-11 col-sm-11">
+                            <img src="images/u930.png" alt=""/>
+                        </div>
+                    </li>
+                    <li class="clearfix col-lg-12 list-ex">
+                        <input type="checkbox" class="col-lg-1 col-md-1 col-sm-1"/>
+                        <div class="f-list-img col-lg-11 col-md-11 col-sm-11">
+                            <img src="images/u930.png" alt=""/>
+                        </div>
+                    </li>
+                    <li class="clearfix col-lg-12 list-ex">
+                        <input type="checkbox" class="col-lg-1 col-md-1 col-sm-1"/>
+                        <div class="f-list-img col-lg-11 col-md-11 col-sm-11">
+                            <img src="images/u930.png" alt=""/>
+                        </div>
+                    </li>
+                    <li class="clearfix col-lg-12 list-ex">
+                        <input type="checkbox" class="col-lg-1 col-md-1 col-sm-1"/>
+                        <div class="f-list-img col-lg-11 col-md-11 col-sm-11">
+                            <img src="images/u930.png" alt=""/>
+                        </div>
+                    </li>
+                    <li class="clearfix col-lg-12 list-ex">
+                        <input type="checkbox" class="col-lg-1 col-md-1 col-sm-1"/>
+                        <div class="f-list-img col-lg-11 col-md-11 col-sm-11">
+                            <img src="images/u930.png" alt=""/>
+                        </div>
+                    </li>
+                    <li class="clearfix col-lg-12 list-ex">
+                        <input type="checkbox" class="col-lg-1 col-md-1 col-sm-1"/>
+                        <div class="f-list-img col-lg-11 col-md-11 col-sm-11">
+                            <img src="images/u930.png" alt=""/>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="clearfix last-btn col-lg-2 col-md-2 col-sm-2">
+                <button class="btn sure col-lg-6 col-md-6 col-sm-6">取消选择</button>
+                <button class="btn setting col-lg-6 col-md-6 col-sm-6">设为封面</button>
+            </div>
+        </div>
+        <!--侧边默认封面图片结束-->
+    </div>
+</div>
+<!--container结束-->
+<!--footer开始-->
+<div class="footer">
+    <div class="container">
+        Copyright@2008-2017   版权所有
+    </div>
+</div>
+<!--footer结束-->
+</body>
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/zui.js"></script>
+<script src="js/common.js"></script>
+</html>

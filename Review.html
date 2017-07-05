@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>帮助中心review页</title>
+    <link rel="stylesheet" href="css/zui.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+<!--nav开始-->
+<div class="header">
+    <div class="container">
+        <div class="logo col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <img src="" alt=""/>
+        </div>
+        <!--当处于PC大、中屏时，导航横向显示开始-->
+        <ul class="nav nav-pills col-lg-7 col-md-7 hidden-sm hidden-xs">
+            <li><a href="Navigation.html">导航管理</a></li>
+            <li><a href="class.html">分类设定</a></li>
+            <li><a href="ContentList.html">文章分类</a></li>
+            <li class="active"><a href="">预览站点</a></li>
+        </ul>
+        <ul class="nav col-lg-3 col-md-3 hidden-sm hidden-xs">
+            <li class="user-name col-lg-8 col-md-7">
+                <span>当前登录用户名</span>
+            </li>
+            <li class="col-lg-4 col-md-5 back">
+                <a href="">退出</a>
+            </li>
+        </ul>
+        <!--当处于PC大、中屏时，导航横向显示结束-->
+        <!--当处于小屏如ipad屏时，导航收起，右侧按钮为点击入口开始-->
+        <button class="dropdown-toggle visible-sm visible-xs  navbar-toggle" type="button" data-toggle="dropdown" data-target=".zui-navbar-collapse">
+            <span class="sr-only">切换导航</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+            <li><a href="">导航管理</a></li>
+            <li><a href="">文章分类</a></li>
+            <li><a href="">文章维护</a></li>
+            <li><a href="">预览站点</a></li>
+        </ul>
+        <!--当处于小屏如ipad屏时，导航收起，右侧按钮为点击入口结束-->
+    </div>
+</div>
+<!--nav结束-->
+<!--container开始-->
+<div class="content contentList content-min-height">
+    <div class="container reviewCon">
+        <!--面包屑，对用户进入到页面某一层的一个提示开始-->
+        <div class="breadcrumb-box">
+            <span>所在位置：</span>
+            <ol class="breadcrumb">
+                <li><a href="">运营管理</a></li>
+                <li><a href="">内容号</a></li>
+                <li class="active">预览站点</li>
+            </ol>
+        </div>
+        <!--面包屑，对用户进入到页面某一层的一个提示结束-->
+        <!--移动端预览开始-->
+        <div class="slidebarLeft col-lg-3 col-md-3 col-sm-3">
+            <h3 class="menu-h3">手机端界面参考预览</h3>
+            <div class="slideLeftCon">
+                <h3 class="h3">文章的标题超长标题</h3>
+                <p class="updata-time"><span>最后更新</span><span>2017-06-14</span></p>
+                <hr/>
+                <span class="mb-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes,
+                    nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</span>
+                <div class="mb-img">
+                    <img src="images/u930.png" alt=""/>
+                </div>
+                <span class="mb-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes,
+                    nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</span>
+            </div>
+        </div>
+        <!--移动端预览结束-->
+        <!--PC端预览开始-->
+        <div class="slidebarRight col-lg-9 col-md-9 col-sm-9">
+            <h3 class="menu-h3">PC端界面参考预览</h3>
+            <div class="slideRightCon">
+                <div class="PCtit clearfix">
+                    <h3 class="h3">文章的标题超长标题</h3>
+                    <p class="updata-time"><span>最后更新</span><span>2017-06-14</span></p>
+                </div>
+                <div class="PCcontent">
+                    <div class="pc-img">
+                        <img src="images/u930.png" alt=""/>
+                    </div>
+                    <span class="mb-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes,
+                    nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</span>
+                    <div class="pc-img">
+                        <img src="images/u930.png" alt=""/>
+                    </div>
+                    <span class="mb-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes,
+                    nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapi</span>
+                </div>
+            </div>
+        </div>
+        <!--PC端预览结束-->
+    </div>
+</div>
+<!--container结束-->
+<!--footer开始-->
+<div class="footer">
+    <div class="container">
+        Copyright@2008-2017   版权所有
+    </div>
+</div>
+<!--footer结束-->
+</body>
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/zui.js"></script>
+<script src="js/common.js"></script>
+</html>

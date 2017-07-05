@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>帮助中心分类设定页</title>
+    <link rel="stylesheet" href="css/zui.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+<!--nav开始-->
+<div class="header">
+    <div class="container">
+        <div class="logo col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <img src="images/u1029.png" alt=""/>
+        </div>
+        <ul class="nav nav-pills col-lg-7 col-md-7 hidden-sm hidden-xs">
+            <li><a href="Navigation.html">导航管理</a></li>
+            <li class="active"><a href="">文章分类</a></li>
+            <li><a href="ContentList.html">文章维护</a></li>
+            <li><a href="Review.html">预览站点</a></li>
+        </ul>
+        <ul class="nav col-lg-3 col-md-3 hidden-sm hidden-xs">
+            <li class="user-name col-lg-8 col-md-7">
+                <span>当前登录用户名</span>
+            </li>
+            <li class="col-lg-4 col-md-5 back">
+                <a href="">退出</a>
+            </li>
+        </ul>
+
+        <button class="dropdown-toggle visible-sm visible-xs  navbar-toggle" type="button" data-toggle="dropdown" data-target=".zui-navbar-collapse">
+            <span class="sr-only">切换导航</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+            <li><a href="">导航管理</a></li>
+            <li><a href="">文章分类</a></li>
+            <li><a href="">文章维护</a></li>
+            <li><a href="">预览站点</a></li>
+        </ul>
+    </div>
+</div>
+<!--nav结束-->
+
+<!--container开始-->
+<div class="content content-height">
+    <div class="container clearfix">
+        <!--面包屑，对用户进入到页面某一层的一个提示开始-->
+        <div class="breadcrumb-box">
+            <span>所在位置：</span>
+            <ol class="breadcrumb">
+                <li><a href="">运营管理</a></li>
+                <li><a href="">内容号</a></li>
+                <li class="active">文章分类</li>
+            </ol>
+        </div>
+        <!--面包屑，对用户进入到页面某一层的一个提示结束-->
+        <!--大、中屏的左侧分类菜单开始-->
+        <nav class="menu col-lg-2 col-md-2 hidden-sm hidden-xs" data-ride="menu" >
+            <h3 class="menu-h3"><i class="icon-th-list icon-x"></i>分类管理</h3>
+            <ul class="tree tree-menu class-menu" data-ride="tree">
+                <li>
+                    <a href="#">一级分类</a>
+                    <ul>
+                        <li class="list-menu-item">
+                            <a href="#">二级分类</a>
+                            <ul>
+                                <li class="list-menu-item"><a href="#">三级分类1</a></li>
+                                <li class="list-menu-item"><a href="#">三级分类2</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">二级分类</a>
+                            <ul >
+                                <li><a href="#">三级分类1</a></li>
+                                <li ><a href="#">三级分类2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">一级分类</a>
+                    <ul>
+                        <li>
+                            <a href="#">二级分类</a>
+                            <ul >
+                                <li ><a href="#">三级分类1</a></li>
+                                <li><a href="#">三级分类2</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">二级分类</a>
+                            <ul >
+                                <li ><a href="#">三级分类1</a></li>
+                                <li ><a href="#">三级分类2</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">二级分类</a>
+                            <ul >
+                                <li ><a href="#">三级分类</a></li>
+                                <li ><a href="#">三级分类</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!--大、中屏的左侧分类菜单结束-->
+        <!--小屏左侧分类菜单变为上面横向菜单开始-->
+        <nav class="navbar navbar-default visible-sm" role="navigation">
+                <ul class="nav navbar-nav nav-justified">
+                    <li class="dropdown active">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown">一级分类 <b class="caret"></b></a>
+                        <ul class="dropdown-menu drop-down" role="menu">
+                            <li class="dropup">
+                                <a href="" class="dropup-toggle" data-toggle="dropup">二级分类 <b class="caret"></b></a>
+                                <ul class="dropup-menu" role="menu">
+                                    <li><a href="">三级分类</a></li>
+                                    <li><a href="">三级分类</a></li>
+                                    <li><a href="">三级分类</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">二级分类</a></li>
+                            <li><a href="">二级分类</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">一级分类</a></li>
+                    <li><a href="">一级分类</a></li>
+                    <li><a href="">一级分类</a></li>
+                    <li><a href="">一级分类</a></li>
+                    <li><a href="">一级分类d</a></li>
+                </ul>
+            </nav>
+        <!--小屏左侧分类菜单变为上面横向菜单结束-->
+        <!--右侧内容开始-->
+        <div class="content-right col-lg-9 col-md-9 col-sm-12">
+                <div class="add-class add-class-first">
+                    <div class=" clearfix">
+                        <p class="p">当前选中分类：</p>
+                        <h3 class="h3 h-active">请点击左侧分类菜单</h3>
+                        <!--<div class="add"><a href=""></a></div>-->
+                        <button type="button"  class="add btn btn-lg btn-primary add-btn" data-toggle="modal" data-target="#Modal">添加同级分类</button>
+                        <button type="button"  class="add btn btn-lg btn-primary add-btn next-btn" data-toggle="modal" data-target="#nextModal">添加下一级分类</button>
+                        <div class="modal fade" id="Modal">
+                            <div class="modal-dialog">
+                                <div class="modal-content class-modal">
+                                    <p class="new-add">添加同级分类</p>
+                                    <hr/>
+                                    <h3 class="h3">分类名称：</h3>
+                                    <input type="text"/>
+                                    <div class="modal-btn clearfix">
+                                        <button type="button" class="btn btn-default addBtn" data-dismiss="modal">取消</button>
+                                        <button class="btn btn btn-primary btn-right addBtn">确定</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="nextModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content class-modal">
+                                    <p class="new-add">添加下一级分类</p>
+                                    <hr/>
+                                    <h3 class="h3">分类名称：</h3>
+                                    <input type="text"/>
+                                    <div class="modal-btn clearfix">
+                                        <button type="button" class="btn btn-default addBtn" data-dismiss="modal">取消</button>
+                                        <button class="btn btn btn-primary btn-right addBtn">确定</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="class-name class-name-first">
+                    <h3 class="h3">分类名称：</h3>
+                    <div class="class-search col-lg-5 col-md-6 col-sm-6">
+                        <input class="form-control" type="text" value="">
+                        <lable data-toggle="modal" data-target="#saveModa2"><span>保存修改</span></lable>
+                        <div class="modal fade" id="saveModa2">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="save-text">
+                                        以完成保存
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="bell col-lg-7 col-md-6 col-sm-6">名称应简洁、准确，不宜过长</span>
+                    <h3 class="h3">分类状态：</h3>
+                    <div class="class-search clearfix col-lg-5 col-md-6 col-sm-6">
+                        <div class="switch text-left" data-toggle="modal" data-target="#saveModal">
+                            <input type="checkbox">
+                            <label>显示</label>
+                        </div>
+                        <div class="modal fade" id="saveModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="save-text">
+                                        以完成保存
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="bell col-lg-7 col-md-6 col-sm-6">设定在页面中，是否显示选中分类</span>
+                </div>
+            </div>
+        <!--右侧内容结束-->
+    </div>
+</div>
+<!--container结束-->
+<!--footer开始-->
+<div class="footer">
+    <div class="container">
+        Copyright@2008-2017    版权所有
+    </div>
+</div>
+<!--footer结束-->
+</body>
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/zui.js"></script>
+<script src="js/common.js"></script>
+</html>

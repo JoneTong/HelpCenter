@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>帮助中心分类介绍管理页</title>
+    <link rel="stylesheet" href="css/zui.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+<!--nav开始-->
+<div class="header">
+    <div class="container">
+        <div class="logo col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <img src="" alt=""/>
+        </div>
+        <!--当处于PC大、中屏时，导航横向显示开始-->
+        <ul class="nav nav-pills col-lg-7 col-md-7 hidden-sm hidden-xs">
+            <li><a href="Navigation.html">导航管理</a></li>
+            <li><a href="class.html">文章分类</a></li>
+            <li  class="active"><a href="">文章维护</a></li>
+            <li><a href="Review.html">预览站点</a></li>
+        </ul>
+        <ul class="nav col-lg-3 col-md-3 hidden-sm hidden-xs">
+            <li class="user-name col-lg-8 col-md-7">
+                <span>当前登录用户名</span>
+            </li>
+            <li class="col-lg-4 col-md-5 back">
+                <a href="">退出</a>
+            </li>
+        </ul>
+        <!--当处于PC大、中屏时，导航横向显示结束-->
+        <!--当处于小屏如ipad屏时，导航收起，右侧按钮为点击入口开始-->
+
+        <button class="dropdown-toggle visible-sm visible-xs  navbar-toggle" type="button" data-toggle="dropdown" data-target=".zui-navbar-collapse">
+            <span class="sr-only">切换导航</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+            <li><a href="">导航管理</a></li>
+            <li><a href="">文章分类</a></li>
+            <li><a href="">文章维护</a></li>
+            <li><a href="">预览站点</a></li>
+        </ul>
+    </div>
+</div>
+<!--nav结束-->
+<!--container开始-->
+<div class="content contentList content-min-height clearfix">
+    <div class="container clearfix">
+        <!--面包屑，对用户进入到页面某一层的一个提示开始-->
+        <div class="breadcrumb-box">
+            <span>所在位置：</span>
+            <ol class="breadcrumb">
+                <li><a href="">运营管理</a></li>
+                <li><a href="">内容号</a></li>
+                <li class="active">文章维护</li>
+            </ol>
+        </div>
+        <!--面包屑，对用户进入到页面某一层的一个提示结束-->
+        <!--大、中屏的左侧分类菜单开始-->
+        <nav class="menu menu-fixed col-lg-2 col-md-2 hidden-sm hidden-xs" data-ride="menu" >
+            <h3 class="menu-h3"><i class="icon-th-list icon-x"></i>分类管理</h3>
+            <ul id="treeMenu" class="tree tree-menu classMenu" data-ride="tree">
+                <li>
+                    <a href="#">一级分类</a>
+                    <ul>
+                        <li>
+                            <a href="#">二级分类</a>
+                            <ul>
+                                <li ><a href="#">三级分类1</a></li>
+                                <li ><a href="#">三级分类2</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">二级分类</a>
+                            <ul >
+                                <li><a href="#">三级分类1</a></li>
+                                <li ><a href="#">三级分类2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">一级分类</a>
+                    <ul>
+                        <li>
+                            <a href="#">二级分类</a>
+                            <ul >
+                                <li ><a href="#">三级分类1</a></li>
+                                <li><a href="#">三级分类2</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">二级分类</a>
+                            <ul >
+                                <li ><a href="#">三级分类1</a></li>
+                                <li ><a href="#">三级分类2</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">二级分类</a>
+                            <ul >
+                                <li ><a href="#">三级分类</a></li>
+                                <li ><a href="#">三级分类</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!--大、中屏的左侧分类菜单结束-->
+        <!--小屏左侧分类菜单变为上面横向菜单开始-->
+        <nav class="navbar navbar-default visible-sm" role="navigation">
+            <ul class="nav navbar-nav nav-justified">
+                <li class="dropdown active">
+                    <a href="" class="dropdown-toggle" data-toggle="dropdown">一级分类 <b class="caret"></b></a>
+                    <ul class="dropdown-menu drop-down" role="menu">
+                        <li class="dropup">
+                            <a href="" class="dropup-toggle" data-toggle="dropup">二级分类 <b class="caret"></b></a>
+                            <ul class="dropup-menu" role="menu">
+                                <li><a href="">三级分类</a></li>
+                                <li><a href="">三级分类</a></li>
+                                <li><a href="">三级分类</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">二级分类</a></li>
+                        <li><a href="">二级分类</a></li>
+                    </ul>
+                </li>
+                <li><a href="">一级分类</a></li>
+                <li><a href="">一级分类</a></li>
+            </ul>
+        </nav>
+        <!--小屏左侧分类菜单变为上面横向菜单结束-->
+        <!--右侧内容区开始-->
+        <div class="content-right1  col-lg-9 col-md-9 col-sm-12">
+            <div class="add-class listAdd">
+                <div class=" clearfix addlist">
+                    <p class="p">当前选中分类：</p>
+                    <h3 class="h3 addh3 hActive">请点击左侧分类</h3>
+                    <span class="all">全部</span>
+                    <span class="eye-open">不显示隐藏内容</span>
+                    <span class="eye-close">仅显示隐藏内容</span>
+                    <button type="button" class="add btn btn-lg" onclick="window.location.href='ContenAdd.html';" >添加文章</button>
+                </div>
+            </div>
+            <hr/>
+            <div class="classControl col-lg-12 col-md-12 col-sm-12">
+                <span class="p">分类介绍:</span>
+                <input class="control-input p controlspan col-lg-9 col-md-9 col-sm-9" maxlength="80" placeholder="最多输入80个字哦"/>
+                <p class="add-write">
+                    <a>
+                        <i class="icon-pencil"></i><span>编辑</span>
+                    </a>
+                </p>
+            </div>
+            <!--点击之前默认出现的相应分类文章列表开始-->
+            <div class="list-default">
+                <div class="controlImgList col-lg-12 col-md-12 col-sm-12" onclick="window.location.href='ContenEdit.html'">
+                    <div class="controlimg col-lg-2 col-md-2 col-sm-2">
+                        <img src="images/u930.png" alt=""/>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-10">
+                        <div class="bg-primary">
+                            <div class="controlChoose">
+                                <button type="button" class="top-setting-default"><i class="icon-long-arrow-up"></i><span>置顶</span></button>
+                                <a href=""><i class="icon-pencil"></i><span>编辑</span></a>
+                                <button type="button" class="btn-primary" data-toggle="modal" data-target="#Modal">
+                                    <i class="icon-list-ul"></i><span>修改分类</span>
+                                </button>
+                                <div class="modal fade" id="Modal">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <p class="newAdd">移动文章到新的频道、分类</p>
+                                            <hr/>
+                                            <div class="clearfix">
+                                                <h3 class="h3">当前位置：</h3>
+                                                <p class="p-default">默认频道-分类的超长超长名称</p>
+                                            </div>
+                                            <h3 class="h3 h3-move">移动到：</h3>
+                                            <select>
+                                                <option value="">请选择频道</option>
+                                                <option value="">频道1</option>
+                                                <option value="">频道2</option>
+                                                <option value="">频道2</option>
+                                                <option value="">频道2</option>
+                                            </select>
+                                            <select>
+                                                <option value="">请选择分类</option>
+                                                <option value="">分类1</option>
+                                                <option value="">分类2</option>
+                                                <option value="">分类2</option>
+                                                <option value="">分类2</option>
+                                            </select>
+                                            <div class="modal-btn clearfix">
+                                                <button class="btn btn-default btn-left" data-dismiss="modal">取消</button>
+                                                <button class="btn btn-primary btn-right">确定</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="eye"><i class="icon-eye-open"></i><span>已显示</span></button>
+                                <button type="button" class="upload"><i class="icon-upload"></i><span>上移</span></button>
+                                <button type="button" class="list-down"><i class="icon-circle-arrow-down"></i><span>下移</span></button>
+                            </div>
+                            <hr/>
+                            <div class="controltext with-padding col-lg-10 col-md-10 col-sm-10">
+                                <h3 class="h3 col-lg-6 col-md-5 col-sm-5">当前分类的文章的超长超长的标题文字</h3>
+                                <p class="col-lg-6 col-md-7 col-sm-7"><a href="" class="copylink">复制文章链接</a>
+                                    <span class="last-write">最后编辑：2017-06-13</span></p>
+                                <span class="controlspan col-lg-12">当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类
+                                    的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="controlImgList col-lg-12 col-md-12 col-sm-12" onclick="">
+                    <div class="controlimg col-lg-2 col-md-2 col-sm-2">
+                        <img src="images/u930.png" alt=""/>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-10">
+                        <div class="bg-primary">
+                            <div class="controlChoose">
+                                <button type="button" class="top-setting-default"><i class="icon-long-arrow-up"></i><span>置顶</span></button>
+                                <a href="ContenEdit.html"><i class="icon-pencil"></i><span>编辑</span></a>
+                                <button type="button" class="btn-primary" data-toggle="modal" data-target="#Modal">
+                                    <i class="icon-list-ul"></i><span>修改分类</span>
+                                </button>
+                                <div class="modal fade" id="Modal">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <p class="newAdd">移动文章到新的频道、分类</p>
+                                            <hr/>
+                                            <h3 class="h3">当前位置：</h3>
+                                            <p>默认频道-分类的超长超长名称</p>
+                                            <h3 class="h3">移动到：</h3>
+                                            <select>
+                                                <option value="">请选择频道</option>
+                                                <option value="">频道1</option>
+                                                <option value="">频道2</option>
+                                                <option value="">频道2</option>
+                                                <option value="">频道2</option>
+                                            </select>
+                                            <select>
+                                                <option value="">请选择分类</option>
+                                                <option value="">分类1</option>
+                                                <option value="">分类2</option>
+                                                <option value="">分类2</option>
+                                                <option value="">分类2</option>
+                                            </select>
+                                            <div class="modal-btn clearfix">
+                                                <button class="btn btn-default btn-left" data-dismiss="modal">取消</button>
+                                                <button class="btn btn-primary btn-right">确定</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="eye"><i class="icon-eye-open"></i><span>已显示</span></button>
+                                <button type="button" class="upload"><i class="icon-upload"></i><span>上移</span></button>
+                                <button type="button" class="list-down"><i class="icon-circle-arrow-down"></i><span>下移</span></button>
+                            </div>
+                            <hr/>
+                            <div class="controltext with-padding col-lg-10 col-md-10 col-sm-10">
+                                <h3 class="h3 col-lg-6 col-md-5 col-sm-5">当前分类的文章的超长超长的标题文字</h3>
+                                <p class="col-lg-6 col-md-7 col-sm-7"><a href="" class="copylink">复制文章链接</a>
+                                    <span class="last-write">最后编辑：2017-06-13</span></p>
+                                <span class="controlspan col-lg-12">当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类
+                                    的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="controlImgList col-lg-12 col-md-12 col-sm-12" onclick="">
+                    <div class="controlimg col-lg-2 col-md-2 col-sm-2">
+                        <img src="images/u1029.png" alt=""/>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-10">
+                        <div class="bg-primary">
+                            <div class="controlChoose">
+                                <button type="button" class="top-setting-default"><i class="icon-long-arrow-up"></i><span>置顶</span></button>
+                                <a href="ContenEdit.html"><i class="icon-pencil"></i><span>编辑</span></a>
+                                <button type="button" class="btn-primary" data-toggle="modal" data-target="#Modal">
+                                    <i class="icon-list-ul"></i><span>修改分类</span>
+                                </button>
+                                <div class="modal fade" id="Modal">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <p class="newAdd">移动文章到新的频道、分类</p>
+                                            <hr/>
+                                            <h3 class="h3">当前位置：</h3>
+                                            <p>默认频道-分类的超长超长名称</p>
+                                            <h3 class="h3">移动到：</h3>
+                                            <select>
+                                                <option value="">请选择频道</option>
+                                                <option value="">频道1</option>
+                                                <option value="">频道2</option>
+                                                <option value="">频道2</option>
+                                                <option value="">频道2</option>
+                                            </select>
+                                            <select>
+                                                <option value="">请选择分类</option>
+                                                <option value="">分类1</option>
+                                                <option value="">分类2</option>
+                                                <option value="">分类2</option>
+                                                <option value="">分类2</option>
+                                            </select>
+                                            <div class="modal-btn clearfix">
+                                                <button class="btn btn-default btn-left" data-dismiss="modal">取消</button>
+                                                <button class="btn btn-primary btn-right">确定</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="eye"><i class="icon-eye-open"></i><span>已显示</span></button>
+                                <button type="button" class="upload"><i class="icon-upload"></i><span>上移</span></button>
+                                <button type="button" class="list-down"><i class="icon-circle-arrow-down"></i><span>下移</span></button>
+                            </div>
+                            <hr/>
+                            <div class="controltext with-padding col-lg-10 col-md-10 col-sm-10">
+                                <h3 class="h3 col-lg-6 col-md-5 col-sm-5">当前分类的文章的超长超长的标题文字</h3>
+                                <p class="col-lg-6 col-md-7 col-sm-7"><a href="" class="copylink">复制文章链接</a>
+                                    <span class="last-write">最后编辑：2017-06-13</span></p>
+                                <span class="controlspan col-lg-12">当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类
+                                    的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="controlImgList col-lg-12 col-md-12 col-sm-12" onclick="">
+                    <div class="controlimg col-lg-2 col-md-2 col-sm-2">
+                        <img src="images/u930.png" alt=""/>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-10">
+                        <div class="bg-primary">
+                            <div class="controlChoose">
+                                <button type="button" class="top-setting-default"><i class="icon-long-arrow-up"></i><span>置顶</span></button>
+                                <a href="ContenEdit.html"><i class="icon-pencil"></i><span>编辑</span></a>
+                                <button type="button" class="btn-primary" data-toggle="modal" data-target="#Modal">
+                                    <i class="icon-list-ul"></i><span>修改分类</span>
+                                </button>
+                                <div class="modal fade" id="Modal">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <p class="newAdd">移动文章到新的频道、分类</p>
+                                            <hr/>
+                                            <h3 class="h3">当前位置：</h3>
+                                            <p>默认频道-分类的超长超长名称</p>
+                                            <h3 class="h3">移动到：</h3>
+                                            <select>
+                                                <option value="">请选择频道</option>
+                                                <option value="">频道1</option>
+                                                <option value="">频道2</option>
+                                                <option value="">频道2</option>
+                                                <option value="">频道2</option>
+                                            </select>
+                                            <select>
+                                                <option value="">请选择分类</option>
+                                                <option value="">分类1</option>
+                                                <option value="">分类2</option>
+                                                <option value="">分类2</option>
+                                                <option value="">分类2</option>
+                                            </select>
+                                            <div class="modal-btn clearfix">
+                                                <button class="btn btn-default btn-left" data-dismiss="modal">取消</button>
+                                                <button class="btn btn-primary btn-right">确定</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="eye"><i class="icon-eye-open"></i><span>已显示</span></button>
+                                <button type="button" class="upload"><i class="icon-upload"></i><span>上移</span></button>
+                                <button type="button" class="list-down"><i class="icon-circle-arrow-down"></i><span>下移</span></button>
+                            </div>
+                            <hr/>
+                            <div class="controltext with-padding col-lg-10 col-md-10 col-sm-10">
+                                <h3 class="h3 col-lg-6 col-md-5 col-sm-5">当前分类的文章的超长超长的标题文字</h3>
+                                <p class="col-lg-6 col-md-7 col-sm-7"><a href="" class="copylink">复制文章链接</a>
+                                    <span class="last-write">最后编辑：2017-06-13</span></p>
+                                <span class="controlspan col-lg-12">当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类
+                                    的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="controlImgList col-lg-12 col-md-12 col-sm-12" onclick="">
+                    <div class="controlimg col-lg-2 col-md-2 col-sm-2">
+                        <img src="images/u930.png" alt=""/>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-10">
+                        <div class="bg-primary">
+                            <div class="controlChoose">
+                                <button type="button" class="top-setting-default"><i class="icon-long-arrow-up"></i><span>置顶</span></button>
+                                <a href="ContenEdit.html"><i class="icon-pencil"></i><span>编辑</span></a>
+                                <button type="button" class="btn-primary" data-toggle="modal" data-target="#Modal">
+                                    <i class="icon-list-ul"></i><span>修改分类</span>
+                                </button>
+                                <div class="modal fade" id="Modal">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <p class="newAdd">移动文章到新的频道、分类</p>
+                                            <hr/>
+                                            <h3 class="h3">当前位置：</h3>
+                                            <p>默认频道-分类的超长超长名称</p>
+                                            <h3 class="h3">移动到：</h3>
+                                            <select>
+                                                <option value="">请选择频道</option>
+                                                <option value="">频道1</option>
+                                                <option value="">频道2</option>
+                                                <option value="">频道2</option>
+                                                <option value="">频道2</option>
+                                            </select>
+                                            <select>
+                                                <option value="">请选择分类</option>
+                                                <option value="">分类1</option>
+                                                <option value="">分类2</option>
+                                                <option value="">分类2</option>
+                                                <option value="">分类2</option>
+                                            </select>
+                                            <div class="modal-btn clearfix">
+                                                <button class="btn btn-default btn-left" data-dismiss="modal">取消</button>
+                                                <button class="btn btn-primary btn-right">确定</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="eye"><i class="icon-eye-open"></i><span>已显示</span></button>
+                                <button type="button" class="upload"><i class="icon-upload"></i><span>上移</span></button>
+                                <button type="button" class="list-down"><i class="icon-circle-arrow-down"></i><span>下移</span></button>
+                            </div>
+                            <hr/>
+                            <div class="controltext with-padding col-lg-10 col-md-10 col-sm-10">
+                                <h3 class="h3 col-lg-6 col-md-5 col-sm-5">当前分类的文章的超长超长的标题文字</h3>
+                                <p class="col-lg-6 col-md-7 col-sm-7"><a href="" class="copylink">复制文章链接</a>
+                                    <span class="last-write">最后编辑：2017-06-13</span></p>
+                                <span class="controlspan col-lg-12">当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类
+                                    的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="controlImgList col-lg-12 col-md-12 col-sm-12" onclick="">
+                    <div class="controlimg col-lg-2 col-md-2 col-sm-2">
+                        <img src="images/u1029.png" alt=""/>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-10">
+                        <div class="bg-primary">
+                            <div class="controlChoose">
+                                <button type="button" class="top-setting-default"><i class="icon-long-arrow-up"></i><span>置顶</span></button>
+                                <a href="ContenEdit.html"><i class="icon-pencil"></i><span>编辑</span></a>
+                                <button type="button" class="btn-primary" data-toggle="modal" data-target="#Modal">
+                                    <i class="icon-list-ul"></i><span>修改分类</span>
+                                </button>
+                                <div class="modal fade" id="Modal">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <p class="newAdd">移动文章到新的频道、分类</p>
+                                            <hr/>
+                                            <h3 class="h3">当前位置：</h3>
+                                            <p>默认频道-分类的超长超长名称</p>
+                                            <h3 class="h3">移动到：</h3>
+                                            <select>
+                                                <option value="">请选择频道</option>
+                                                <option value="">频道1</option>
+                                                <option value="">频道2</option>
+                                                <option value="">频道2</option>
+                                                <option value="">频道2</option>
+                                            </select>
+                                            <select>
+                                                <option value="">请选择分类</option>
+                                                <option value="">分类1</option>
+                                                <option value="">分类2</option>
+                                                <option value="">分类2</option>
+                                                <option value="">分类2</option>
+                                            </select>
+                                            <div class="modal-btn clearfix">
+                                                <button class="btn btn-default btn-left" data-dismiss="modal">取消</button>
+                                                <button class="btn btn-primary btn-right">确定</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="eye"><i class="icon-eye-open"></i><span>已显示</span></button>
+                                <button type="button" class="upload"><i class="icon-upload"></i><span>上移</span></button>
+                                <button type="button" class="list-down"><i class="icon-circle-arrow-down"></i><span>下移</span></button>
+                            </div>
+                            <hr/>
+                            <div class="controltext with-padding col-lg-10 col-md-10 col-sm-10">
+                                <h3 class="h3 col-lg-6 col-md-5 col-sm-5">当前分类的文章的超长超长的标题文字</h3>
+                                <p class="col-lg-6 col-md-7 col-sm-7"><a href="" class="copylink">复制文章链接</a>
+                                    <span class="last-write">最后编辑：2017-06-13</span></p>
+                                <span class="controlspan col-lg-12">当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类
+                                    的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--点击之前默认出现的相应分类文章列表结束-->
+            <!--点击之后出现的相应分类文章列表开始-->
+            <div class="list-group clearfix">
+                <div class="controlImgList col-lg-12 col-md-12 col-sm-12" onclick="">
+                    <div class="controlimg col-lg-2 col-md-2 col-sm-2">
+                        <img src="images/u930.png" alt=""/>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-10">
+                        <div class="bg-primary">
+                            <div class="controlChoose">
+                                <button type="button" class="top-setting"><i class="icon-long-arrow-up"></i><span>置顶</span></button>
+                                <a href="ContenEdit.html"><i class="icon-pencil"></i><span>编辑</span></a>
+                                <button type="button" class="btn-primary" data-toggle="modal" data-target="#listModal">
+                                    <i class="icon-list-ul"></i><span>修改分类</span>
+                                </button>
+                                <div class="modal fade" id="listModal">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <p class="newAdd">移动文章到新的频道、分类</p>
+                                            <hr/>
+                                            <div class="clearfix">
+                                                <h3 class="h3">当前位置：</h3>
+                                                <p class="p-default">默认频道-分类的超长超长名称</p>
+                                            </div>
+                                            <h3 class="h3 h3-move">移动到：</h3>
+                                            <select>
+                                                <option value="">请选择频道</option>
+                                                <option value="">频道1</option>
+                                                <option value="">频道2</option>
+                                                <option value="">频道2</option>
+                                                <option value="">频道2</option>
+                                            </select>
+                                            <select>
+                                                <option value="">请选择分类</option>
+                                                <option value="">分类1</option>
+                                                <option value="">分类2</option>
+                                                <option value="">分类2</option>
+                                                <option value="">分类2</option>
+                                            </select>
+                                            <div class="modal-btn clearfix">
+                                                <button class="btn btn-default btn-left" data-dismiss="modal">取消</button>
+                                                <button class="btn btn-primary btn-right">确定</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="eye"><i class="icon-eye-open"></i><span>已显示</span></button>
+                                <button type="button" class="upload"><i class="icon-upload"></i><span>上移</span></button>
+                                <button type="button" class="list-down"><i class="icon-circle-arrow-down"></i><span>下移</span></button>
+                            </div>
+                            <hr/>
+                            <div class="controltext with-padding col-lg-10 col-md-10 col-sm-10">
+                                <h3 class="h3 col-lg-6 col-md-5 col-sm-5">当前分类的文章的超长超长的标题文字</h3>
+                                <p class="col-lg-6 col-md-7 col-sm-7"><a href="" class="copylink">复制文章链接</a>
+                                    <span class="last-write">最后编辑：2017-06-13</span></p>
+                                <span class="controlspan col-lg-12">当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类
+                                    的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="controlImgList col-lg-12 col-md-12 col-sm-12" onclick="">
+                    <div class="controlimg col-lg-2 col-md-2 col-sm-2">
+                        <img src="images/u930.png" alt=""/>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-10">
+                        <div class="bg-primary">
+                            <div class="controlChoose">
+                                <button type="button" class="top-setting"><i class="icon-long-arrow-up"></i><span>置顶</span></button>
+                                <a href="ContenEdit.html"><i class="icon-pencil"></i><span>编辑</span></a>
+                                <button type="button" class="btn-primary" data-toggle="modal" data-target="#listModal">
+                                    <i class="icon-list-ul"></i><span>修改分类</span>
+                                </button>
+                                <div class="modal fade" id="listModal">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <p class="newAdd">移动文章到新的频道、分类</p>
+                                            <hr/>
+                                            <div class="clearfix">
+                                                <h3 class="h3">当前位置：</h3>
+                                                <p class="p-default">默认频道-分类的超长超长名称</p>
+                                            </div>
+                                            <h3 class="h3 h3-move">移动到：</h3>
+                                            <select>
+                                                <option value="">请选择频道</option>
+                                                <option value="">频道1</option>
+                                                <option value="">频道2</option>
+                                                <option value="">频道2</option>
+                                                <option value="">频道2</option>
+                                            </select>
+                                            <select>
+                                                <option value="">请选择分类</option>
+                                                <option value="">分类1</option>
+                                                <option value="">分类2</option>
+                                                <option value="">分类2</option>
+                                                <option value="">分类2</option>
+                                            </select>
+                                            <div class="modal-btn clearfix">
+                                                <button class="btn btn-default btn-left" data-dismiss="modal">取消</button>
+                                                <button class="btn btn-primary btn-right">确定</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="eye"><i class="icon-eye-open"></i><span>已显示</span></button>
+                                <button type="button" class="upload"><i class="icon-upload"></i><span>上移</span></button>
+                                <button type="button" class="list-down"><i class="icon-circle-arrow-down"></i><span>下移</span></button>
+                            </div>
+                            <hr/>
+                            <div class="controltext with-padding col-lg-10 col-md-10 col-sm-10">
+                                <h3 class="h3 col-lg-6 col-md-5 col-sm-5">当前分类的文章的超长超长的标题文字</h3>
+                                <p class="col-lg-6 col-md-7 col-sm-7"><a href="" class="copylink">复制文章链接</a>
+                                    <span class="last-write">最后编辑：2017-06-13</span></p>
+                                <span class="controlspan col-lg-12">当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类
+                                    的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="controlImgList col-lg-12 col-md-12 col-sm-12" onclick="">
+                    <div class="controlimg col-lg-2 col-md-2 col-sm-2">
+                        <img src="images/u1029.png" alt=""/>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-10">
+                        <div class="bg-primary">
+                            <div class="controlChoose">
+                                <button type="button" class="top-setting"><i class="icon-long-arrow-up"></i><span>置顶</span></button>
+                                <a href="ContenEdit.html"><i class="icon-pencil"></i><span>编辑</span></a>
+                                <button type="button" class="btn-primary" data-toggle="modal" data-target="#listModal">
+                                    <i class="icon-list-ul"></i><span>修改分类</span>
+                                </button>
+                                <div class="modal fade" id="listModal">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <p class="newAdd">移动文章到新的频道、分类</p>
+                                            <hr/>
+                                            <div class="clearfix">
+                                                <h3 class="h3">当前位置：</h3>
+                                                <p class="p-default">默认频道-分类的超长超长名称</p>
+                                            </div>
+                                            <h3 class="h3 h3-move">移动到：</h3>
+                                            <select>
+                                                <option value="">请选择频道</option>
+                                                <option value="">频道1</option>
+                                                <option value="">频道2</option>
+                                                <option value="">频道2</option>
+                                                <option value="">频道2</option>
+                                            </select>
+                                            <select>
+                                                <option value="">请选择分类</option>
+                                                <option value="">分类1</option>
+                                                <option value="">分类2</option>
+                                                <option value="">分类2</option>
+                                                <option value="">分类2</option>
+                                            </select>
+                                            <div class="modal-btn clearfix">
+                                                <button class="btn btn-default btn-left" data-dismiss="modal">取消</button>
+                                                <button class="btn btn-primary btn-right">确定</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="eye"><i class="icon-eye-open"></i><span>已显示</span></button>
+                                <button type="button" class="upload"><i class="icon-upload"></i><span>上移</span></button>
+                                <button type="button" class="list-down"><i class="icon-circle-arrow-down"></i><span>下移</span></button>
+                            </div>
+                            <hr/>
+                            <div class="controltext with-padding col-lg-10 col-md-10 col-sm-10">
+                                <h3 class="h3 col-lg-6 col-md-5 col-sm-5">当前分类的文章的超长超长的标题文字</h3>
+                                <p class="col-lg-6 col-md-7 col-sm-7"><a href="" class="copylink">复制文章链接</a>
+                                    <span class="last-write">最后编辑：2017-06-13</span></p>
+                                <span class="controlspan col-lg-12">当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类
+                                    的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="controlImgList col-lg-12 col-md-12 col-sm-12" onclick="">
+                    <div class="controlimg col-lg-2 col-md-2 col-sm-2">
+                        <img src="images/u930.png" alt=""/>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-10">
+                        <div class="bg-primary">
+                            <div class="controlChoose">
+                                <button type="button" class="top-setting"><i class="icon-long-arrow-up"></i><span>置顶</span></button>
+                                <a href="ContenEdit.html"><i class="icon-pencil"></i><span>编辑</span></a>
+                                <button type="button" class="btn-primary" data-toggle="modal" data-target="#listModal">
+                                    <i class="icon-list-ul"></i><span>修改分类</span>
+                                </button>
+                                <div class="modal fade" id="listModal">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <p class="newAdd">移动文章到新的频道、分类</p>
+                                            <hr/>
+                                            <div class="clearfix">
+                                                <h3 class="h3">当前位置：</h3>
+                                                <p class="p-default">默认频道-分类的超长超长名称</p>
+                                            </div>
+                                            <h3 class="h3 h3-move">移动到：</h3>
+                                            <select>
+                                                <option value="">请选择频道</option>
+                                                <option value="">频道1</option>
+                                                <option value="">频道2</option>
+                                                <option value="">频道2</option>
+                                                <option value="">频道2</option>
+                                            </select>
+                                            <select>
+                                                <option value="">请选择分类</option>
+                                                <option value="">分类1</option>
+                                                <option value="">分类2</option>
+                                                <option value="">分类2</option>
+                                                <option value="">分类2</option>
+                                            </select>
+                                            <div class="modal-btn clearfix">
+                                                <button class="btn btn-default btn-left" data-dismiss="modal">取消</button>
+                                                <button class="btn btn-primary btn-right">确定</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="eye"><i class="icon-eye-open"></i><span>已显示</span></button>
+                                <button type="button" class="upload"><i class="icon-upload"></i><span>上移</span></button>
+                                <button type="button" class="list-down"><i class="icon-circle-arrow-down"></i><span>下移</span></button>
+                            </div>
+                            <hr/>
+                            <div class="controltext with-padding col-lg-10 col-md-10 col-sm-10">
+                                <h3 class="h3 col-lg-6 col-md-5 col-sm-5">当前分类的文章的超长超长的标题文字</h3>
+                                <p class="col-lg-6 col-md-7 col-sm-7"><a href="" class="copylink">复制文章链接</a>
+                                    <span class="last-write">最后编辑：2017-06-13</span></p>
+                                <span class="controlspan col-lg-12">当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类
+                                    的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="controlImgList col-lg-12 col-md-12 col-sm-12" onclick="">
+                    <div class="controlimg col-lg-2 col-md-2 col-sm-2">
+                        <img src="images/u930.png" alt=""/>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-10">
+                        <div class="bg-primary">
+                            <div class="controlChoose">
+                                <button type="button" class="top-setting"><i class="icon-long-arrow-up"></i><span>置顶</span></button>
+                                <a href="ContenEdit.html"><i class="icon-pencil"></i><span>编辑</span></a>
+                                <button type="button" class="btn-primary" data-toggle="modal" data-target="#listModal">
+                                    <i class="icon-list-ul"></i><span>修改分类</span>
+                                </button>
+                                <div class="modal fade" id="listModal">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <p class="newAdd">移动文章到新的频道、分类</p>
+                                            <hr/>
+                                            <div class="clearfix">
+                                                <h3 class="h3">当前位置：</h3>
+                                                <p class="p-default">默认频道-分类的超长超长名称</p>
+                                            </div>
+                                            <h3 class="h3 h3-move">移动到：</h3>
+                                            <select>
+                                                <option value="">请选择频道</option>
+                                                <option value="">频道1</option>
+                                                <option value="">频道2</option>
+                                                <option value="">频道2</option>
+                                                <option value="">频道2</option>
+                                            </select>
+                                            <select>
+                                                <option value="">请选择分类</option>
+                                                <option value="">分类1</option>
+                                                <option value="">分类2</option>
+                                                <option value="">分类2</option>
+                                                <option value="">分类2</option>
+                                            </select>
+                                            <div class="modal-btn clearfix">
+                                                <button class="btn btn-default btn-left" data-dismiss="modal">取消</button>
+                                                <button class="btn btn-primary btn-right">确定</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="eye"><i class="icon-eye-open"></i><span>已显示</span></button>
+                                <button type="button" class="upload"><i class="icon-upload"></i><span>上移</span></button>
+                                <button type="button" class="list-down"><i class="icon-circle-arrow-down"></i><span>下移</span></button>
+                            </div>
+                            <hr/>
+                            <div class="controltext with-padding col-lg-10 col-md-10 col-sm-10">
+                                <h3 class="h3 col-lg-6 col-md-5 col-sm-5">当前分类的文章的超长超长的标题文字</h3>
+                                <p class="col-lg-6 col-md-7 col-sm-7"><a href="" class="copylink">复制文章链接</a>
+                                    <span class="last-write">最后编辑：2017-06-13</span></p>
+                                <span class="controlspan col-lg-12">当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类
+                                    的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="controlImgList col-lg-12 col-md-12 col-sm-12" onclick="">
+                    <div class="controlimg col-lg-2 col-md-2 col-sm-2">
+                        <img src="images/u930.png" alt=""/>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-10">
+                        <div class="bg-primary">
+                            <div class="controlChoose">
+                                <button type="button" class="top-setting"><i class="icon-long-arrow-up"></i><span>置顶</span></button>
+                                <a href="ContenEdit.html"><i class="icon-pencil"></i><span>编辑</span></a>
+                                <button type="button" class="btn-primary" data-toggle="modal" data-target="#listModal">
+                                    <i class="icon-list-ul"></i><span>修改分类</span>
+                                </button>
+                                <div class="modal fade" id="listModal">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <p class="newAdd">移动文章到新的频道、分类</p>
+                                            <hr/>
+                                            <div class="clearfix">
+                                                <h3 class="h3">当前位置：</h3>
+                                                <p class="p-default">默认频道-分类的超长超长名称</p>
+                                            </div>
+                                            <h3 class="h3 h3-move">移动到：</h3>
+                                            <select>
+                                                <option value="">请选择频道</option>
+                                                <option value="">频道1</option>
+                                                <option value="">频道2</option>
+                                                <option value="">频道2</option>
+                                                <option value="">频道2</option>
+                                            </select>
+                                            <select>
+                                                <option value="">请选择分类</option>
+                                                <option value="">分类1</option>
+                                                <option value="">分类2</option>
+                                                <option value="">分类2</option>
+                                                <option value="">分类2</option>
+                                            </select>
+                                            <div class="modal-btn clearfix">
+                                                <button class="btn btn-default btn-left" data-dismiss="modal">取消</button>
+                                                <button class="btn btn-primary btn-right">确定</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="eye"><i class="icon-eye-open"></i><span>已显示</span></button>
+                                <button type="button" class="upload"><i class="icon-upload"></i><span>上移</span></button>
+                                <button type="button" class="list-down"><i class="icon-circle-arrow-down"></i><span>下移</span></button>
+                            </div>
+                            <hr/>
+                            <div class="controltext with-padding col-lg-10 col-md-10 col-sm-10">
+                                <h3 class="h3 col-lg-6 col-md-5 col-sm-5">当前分类的文章的超长超长的标题文字</h3>
+                                <p class="col-lg-6 col-md-7 col-sm-7"><a href="" class="copylink">复制文章链接</a>
+                                    <span class="last-write">最后编辑：2017-06-13</span></p>
+                                <span class="controlspan col-lg-12">当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类
+                                    的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字当前分类的文章的超长超长的标题文字</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--点击之后出现的相应分类文章列表结束-->
+            <!--分页器开始-->
+            <ul class="pager">
+                <li class="previous"><a href="">«</a></li>
+                <li class="active"><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">5</a></li>
+                <li class="next"><a href="">»</a></li>
+            </ul>
+            <!--分页器结束-->
+
+        </div>
+        <!--右侧内容区结束-->
+    </div>
+</div>
+<!--container结束-->
+<!--footer开始-->
+<div class="footer1">
+    <div class="container">
+        Copyright@2008-2017  版权所有
+    </div>
+</div>
+<!--footer结束-->
+</body>
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/zui.js"></script>
+<script src="js/common.js"></script>
+</html>
